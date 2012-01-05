@@ -7,6 +7,8 @@ Apple Store Search is the gem to search from apple store.
    
 ## How to use it ##
 
+    gem install apple_store_search
+
 You can call the Gem by 
 
     AppleStoreSearch::Search.new.search(options,selected) #it will return a json 
