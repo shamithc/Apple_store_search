@@ -1,13 +1,17 @@
-This is an extension for the Spree e-commerce project.  It provides a "unified" locale file for each of the so-called "core" gems that make up Spree.
+# Apple Store Search #
 
-  * spree_api
-  * spree_auth
-  * spree_core
-  * spree_dash
-  * spree_promo
+Apple Store Search is the gem to search from apple store.
 
+  * Simple to use
+   
+How to use it
+
+   options={:term=>"a",:lang=>"en",:limit=>500}
+   selected=['artistId','artistName','aaa']
+   
 You can get a list of helpful Rake tasks by running
 
     rake -T
 
-See the [official documentation](http://spreecommerce.com/documentation) for more details.
+See the [Apple Search API Details](http://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html)
+See the [Runygems](https://rubygems.org/gems/apple_store_search) to install.
