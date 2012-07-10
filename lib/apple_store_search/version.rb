@@ -1,3 +1,3 @@
-	module AppleStoreSearch
-  VERSION = "0.0.1"
+module AppleStoreSearch
+  VERSION = "0.0.5"
 end

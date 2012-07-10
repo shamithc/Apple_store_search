@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = AppleStoreSearch::VERSION
   s.authors     = "Shamith c"
   s.email       = "shamithc@gmail.com"
-  s.homepage    = ""
+  s.homepage    = "http://shamith.com/"
   s.summary     = %q{This is for searching in app in apple store}
   s.description = %q{Exited to watch its progress}
 
@@ -19,6 +19,9 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  #s.add_development_dependency "rspec"
+  s.add_dependency('curl')
+  s.add_dependency('json')
+  #s.add_runtime_dependency('curl', '0.0.9') 
+  #s.add_runtime_dependency('json', '1.7.3')
 end
