@@ -1,4 +1,5 @@
 # Apple Store Search #
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/shamithc/Apple_store_search)
 
 
 Apple Store Search is the gem to search from apple store.
