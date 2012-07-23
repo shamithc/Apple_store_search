@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'apple_store_search'
+
+p 'Yes'
+

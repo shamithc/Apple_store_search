@@ -4,3 +4,7 @@ source "http://rubygems.org"
 gemspec
 #gem 'json'
 #gem 'curl'
+
+gem 'rspec'
+gem 'webmock'
+gem 'httparty'
