@@ -5,12 +5,12 @@ module AppleStoreSearch
   class Search
     #initialization 
     def initialize
-      @base_url="http://itunes.apple.com/search?"
+      @base_url = "http://itunes.apple.com/search?"
       #@curl = CURL.new
     end
    
     def search(options,selected)
-      @base_url=load_options(options)
+      @base_url = load_options(options)
       search_parse
       if @data.has_key?('errorMessage')
          puts "Invalid key-value pair(s) in request"
@@ -24,17 +24,17 @@ module AppleStoreSearch
     protected
 
      def get_selected(selected)
-        count=@data['resultCount']
-        j=0
-        @result=Hash.new
+        count = @data['resultCount']
+        j = 0
+        @result = Hash.new
         @data['results'].each do |data|
-           i=0
-           @set=Array.new
+           i = 0
+           @set = Array.new
            selected.each do |key|
               #@result[j] << data[key]
               @set.push(data[key])
            end
-           @result[j]=@set
+           @result[j] = @set
            j+=1
         end
         #puts @result
@@ -43,7 +43,7 @@ module AppleStoreSearch
     def search_parse  #(selected)
       curl = CURL.new
       page = curl.get_raw(@base_url)
-      @data= JSON.parse(page)
+      @data = JSON.parse(page)
       return @data
     end
 
